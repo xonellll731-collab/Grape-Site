@@ -1,4 +1,8 @@
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+       box-sizing: border-box;
+        margin: 0; 
+        padding: 0;
+       }
 
     :root {
       --wine:       #5B2D82;
@@ -99,7 +103,7 @@
     nav a:hover { color: #fff; }
     nav a:hover::after { width: 100%; }
 
-    /* HERO*/
+    /* Grape Production*/
     .first-container {
       position: relative;
       min-height: 88vh;
@@ -107,7 +111,7 @@
       align-items: center;
       overflow: hidden;
     }
-
+    /* Background image */
     .all-firstcontainer{
       position: absolute;
       inset: 0;
@@ -142,9 +146,6 @@
       color: var(--gold);
       font-weight: 600;
       margin-bottom: 20px;
-      border: 1px solid rgba(201,145,58,.4);
-      padding: 5px 16px;
-      border-radius: 20px;
     }
 
     .first-container h1 {
@@ -167,12 +168,6 @@
       line-height: 1.85;
       max-width: 720px;
       margin: 0 auto 40px;
-    }
-
-    .firstcontainer-body sup a {
-      color: var(--gold);
-      font-size: 0.72em;
-      text-decoration: none;
     }
 
     .firstcontainer-stats {
@@ -423,12 +418,6 @@
       line-height: 1.82;
     }
 
-    .agro-card-body p sup a {
-      color: var(--wine);
-      font-size: 0.72em;
-      text-decoration: none;
-    }
-
     .agro-card.challenge {
       border-color: rgba(107,26,42,.25);
     }
@@ -501,12 +490,6 @@
       margin-bottom: 32px;
     }
 
-    .market-content p sup a {
-      color: var(--gold);
-      font-size: 0.72em;
-      text-decoration: none;
-    }
-
 
     @media (max-width: 900px) {
       .agro-grid { grid-template-columns: 1fr; }
@@ -514,15 +497,7 @@
       .market-img-wrap { height: 260px; }
     }
 
-    /*  DIVIDER*/
-    .vine-divider {
-      text-align: center;
-      padding: 12px 0;
-      color: var(--gold);
-      font-size: 1.4rem;
-      letter-spacing: 12px;
-      opacity: 0.55;
-    }
+   
 
     /*  FOOTER*/
     footer {
