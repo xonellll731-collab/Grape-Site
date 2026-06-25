@@ -1,0 +1,104 @@
+/* Laptops / Desktops */
+@media (min-width: 1024px) {
+    .navbar ul li:not(.logo):not(.search):not(.cart) {
+        display: flex;
+    }
+
+    .title-wraper {
+    font-weight: 600;
+    font-size: clamp(26px, 4vw, 46px);
+}
+
+   .description-wrapper {
+    padding: 6px 0;
+    font-size: clamp(14px, 1.5vw, 20px);
+}
+
+    .links-wrapper ul {
+        flex-direction: row; /* Buttons sit side by side on desktop */
+        justify-content: center;
+    }
+}
+
+/* Ultrawide Screens */
+@media (min-width: 1400px) {
+    .first-highlight-wrapper,
+    .second-highlight-wrapper,
+    .third-highlight-wrapper {
+        height: 80vh;              
+        background-position: center bottom;
+        background-size: cover;        
+        border-radius: 0px; /* Full bleed layout */
+    }
+
+  .fourth-highlight-wrapper,
+  .fifth-highlight-wrapper,
+  .sixth-highlight-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  
+  .left-side-wrapper,
+  .right-side-wrapper,
+  .fifth-left-wrapper,
+  .fifth-right-wrapper,
+  .sixth-left-wrapper,
+  .sixth-right-wrapper {
+    height: 580px;
+  }
+
+}
+
+@media (min-width: 768px) {
+    /* Broaden layouts on wider viewports */
+    .upper-text-container,
+    .middle-text,
+    .lower-text,
+    .shop-methods,
+    .legal-row {
+        width: 92%;
+    }
+
+    /* Spread links into an horizontal multi-column directory grid */
+    .lower-text {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .lower-text ul {
+        padding: 0;
+        border-bottom: none; /* Strip out cell dividers on desktop grid */
+    }
+
+    .lower-text ul li {
+        font-size: 0.95em;
+    }
+
+    /* Flip legal row to horizontal layout (Copyright left, location right) */
+    .legal-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* ==========================================================================
+   3. Ultrawide Monitors (Above 1400px Scaling)
+   ========================================================================== */
+@media (min-width: 1400px) {
+    .upper-text-container,
+    .middle-text,
+    .lower-text,
+    .shop-methods,
+    .legal-row {
+        width: 95%;
+        max-width: 1200px; /* Lock extreme width to maintain design density */
+    }
+
+    .lower-text {
+        gap: 20px;
+    }
+}
